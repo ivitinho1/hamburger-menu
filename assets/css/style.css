@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #ddd;
+    scroll-behavior: smooth;
+}
+
+/* HOME */
+:root{
+    --red: #d63a25;
+    --white: #fff;
+    --dark:#000;
+    --green: #44a717;
+}
+
+.home{
+    background-color: #191919;
+    width: 100%;
+    height: 100vh;
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    overflow-y: auto;
+}
+.home-text{
+    max-width: 37rem;
+}
+
+.home-text p{
+    color: #000;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: start;
+}
+
+.text-h4, .text-h1{
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 700;
+}
+
+.home-text p{
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.home-text .text-h1 span{
+    color: yellow;
+}
+
+.home-btn{
+    background: var(--red);
+    color: var(--white);
+    padding: 15px 45px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.home-btn:hover{
+    background: var(--green);
+    font-size: 18px;
+    color: yellow;
+}
+.home-img img{
+    width: 100%;
+}
+.home-img2 img{
+    width: 80%;
+    margin-left: 100%;
+}
+
+/* SERVIÇOS */
+.servicos{
+    background-color: #ddd;
+    height: 100vh;
+}
+
+.texts-top{
+    text-align: center;
+    height: 200px;
+}
+
+.texts-top .text-p, .h1-servicos{
+    color: orange;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.texts-top h1{
+    color: #000;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-services{
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.container-services div{
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.container-services div h2,p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.container-services img{
+    height: 250px;
+}
+
+.container-services .img-quality{
+    height: 230px;
+}
+/* LOCALIZAÇÃO */
+.servicos .localizacao{
+    background-color: #ddd;
+    height: 700px;
+}
+
+.servicos .localizacao p{
+    color: orange;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 60px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.servicos .localizacao h1{
+    font-size: 33px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.servicos .localizacao .mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+/* CARDAPIO */
+.cardapio{
+    background-color: #ddd;
+    height: 300px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 40px;
+    
+}
+
+.container-cardapio{
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.54);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.54);
+    box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.54);
+    border-radius: 5px;
+    padding: 50px 100px;
+}
+
+.cardapio .container-cardapio h1,p{
+    color: #191919;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cardapio .container-cardapio button{
+    background: #3d3a4e;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background-size: 400%;
+    border: none;
+}
+
+.container-cardapio button:hover::before{
+    transform: scaleX(1);
+}
+
+.container-cardapio button a{
+    position: relative;
+    z-index: 1;
+}
+
+.container-cardapio button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%);
+transition: all 0.475s;
+}
+
+.container-cardapio button a{
+    color: #fff;
+    font-weight: 600;
+}
+
+/* FOOTER */
+.footer{
+    background-color: #000;
+    height: 255px;
+    width: 100%;
+}
+
+.footer .logo-e-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer .logo-e-text p{
+    color: orange;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .redes-sociais{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-sociais ul{
+    display: flex;
+    margin: 30px;
+    list-style: none;
+}
+
+.redes-sociais ul li{
+    background-color: #000;
+    margin: 20px;
+    font-size: 23px;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.redes-sociais ul li:hover{
+    transform: scale(1.1);
+}
+
+.redes-sociais ul li a:hover{
+    color: orange;
+    transition: 0.5s;
+}
